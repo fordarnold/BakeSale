@@ -1,0 +1,20 @@
+# laravel 5
+
+.env
+/vendor
+composer.lock
+composer.phar
+
+# node.js
+
+/node_modules
+
+# general
+
+.DS_Store
+Thumbs.db
+/.idea
+
+*.mp4
+*.mkv
+/public/video
