@@ -34,4 +34,32 @@ return [
 		'secret' => '',
 	],
 
+	/**
+	 * Social networks
+	 */
+
+	'twitter' => [
+	    'client_id' => '',
+	    'client_secret' => '',
+	    'redirect' => 'http://your-callback-url',
+	],
+
+	'facebook' => [
+	    'client_id' => '',
+	    'client_secret' => '',
+	    'redirect' => 'http://your-callback-url',
+	],
+
+	'google' => [
+	    'client_id' => '',
+	    'client_secret' => '',
+	    'redirect' => 'http://your-callback-url',
+	],
+
+	'github' => [
+	    'client_id' => 'your-github-app-id',
+	    'client_secret' => 'your-github-app-secret',
+	    'redirect' => 'http://your-callback-url',
+	],
+
 ];
