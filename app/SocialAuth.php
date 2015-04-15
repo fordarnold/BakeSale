@@ -1,7 +1,7 @@
 <?php namespace Bakesale;
 
 use Laravel\Socialite\Contracts\Factory as Socialite;
-use Illumunate\Contracts\Auth\Guard as Guard;
+use Illuminate\Contracts\Auth\Guard as Guard;
 use Bakesale\Repositories\UserRepo as UserRepo;
 
 class SocialAuth {
@@ -22,7 +22,7 @@ class SocialAuth {
 			return $this->getAuthorization();
 
 		$user = $this->socialite->driver('facebook')->user();
-		var_dump($user); exit();
+		dd($user);
 	}
 
 	private function getAuthorization()
