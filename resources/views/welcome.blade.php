@@ -1,6 +1,6 @@
 <html>
 	<head>
-		<title>Laravel</title>
+		<title>BakeSale - A simple bakery management system</title>
 		
 		<link href='//fonts.googleapis.com/css?family=Lato:100' rel='stylesheet' type='text/css'>
 
@@ -10,7 +10,6 @@
 				padding: 0;
 				width: 100%;
 				height: 100%;
-				color: #B0BEC5;
 				display: table;
 				font-weight: 100;
 				font-family: 'Lato';
@@ -40,8 +39,14 @@
 	<body>
 		<div class="container">
 			<div class="content">
-				<div class="title">Laravel 5</div>
-				<div class="quote">{{ Inspiring::quote() }}</div>
+				<div class="title">BakeSale</div>
+				<div class="quote">hassle-free bakery and pastry shop management</div>
+
+				<h3>
+					<a href="{{ url('users/login/social') }}">
+						Login with Facebook
+					</a>
+				</h3>
 			</div>
 		</div>
 	</body>

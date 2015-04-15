@@ -19,3 +19,7 @@ Route::controllers([
 	'auth' => 'Auth\AuthController',
 	'password' => 'Auth\PasswordController',
 ]);
+
+# social auth
+Route::get('users/login/social', 'Auth\SocialyseController@login');
+Route::get('users/login/social/failed', 'Auth\SocialyseController@abort');
