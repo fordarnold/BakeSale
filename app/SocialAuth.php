@@ -22,7 +22,7 @@ class SocialAuth {
 			return $this->getAuthorization();
 
 		$user = $this->socialite->driver('facebook')->user();
-		dd($user);
+		dd(['message' => 'Use this user data returned to create a new user', 'user_info' => $user]);
 	}
 
 	private function getAuthorization()
