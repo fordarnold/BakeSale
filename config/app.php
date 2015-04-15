@@ -145,8 +145,8 @@ return [
 		'Bakesale\Providers\EventServiceProvider',
 		'Bakesale\Providers\RouteServiceProvider',
 
-		"Laracasts\Generators\GeneratorsServiceProvider",
-
+		'Laracasts\Generators\GeneratorsServiceProvider',
+		'Laravel\Socialite\SocialiteServiceProvider',
 	],
 
 	/*

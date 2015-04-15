@@ -34,10 +34,8 @@ return [
 		'secret' => '',
 	],
 
-	/**
-	 * Social networks
-	 */
-
+	# Social networks authentication
+	
 	'twitter' => [
 	    'client_id' => '',
 	    'client_secret' => '',
