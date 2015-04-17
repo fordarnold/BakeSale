@@ -82,6 +82,7 @@
 	<!-- scripts -->
 	<script src="{{ asset('/vendor/foundation-5.5.0/js/vendor/jquery.js') }}"></script>
 	<script src="{{ asset('/vendor/foundation-5.5.0/js/foundation.min.js') }}"></script>
+	<script src="{{ asset('/js/jquery.scroll.js') }}"></script>
 	<script>
       $(document).foundation();
     </script>
