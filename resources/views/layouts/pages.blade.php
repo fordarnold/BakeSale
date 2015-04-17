@@ -26,7 +26,7 @@
 			<ul class="title-area">
 				<li class="name">
 					<a href="{{ url('/') }}">
-					<img src="{{ asset('/images/logo.svg') }}" alt="" id="logo-image">
+					<img src="{{ asset('/images/logo.svg') }}" alt="Bakesale" id="logo-image">
 					</a>
 				</li>
 				<li class="toggle-topbar menu-icon"><a href="#"><span>Menu</span></a></li>
@@ -82,7 +82,7 @@
 	<!-- scripts -->
 	<script src="{{ asset('/vendor/foundation-5.5.0/js/vendor/jquery.js') }}"></script>
 	<script src="{{ asset('/vendor/foundation-5.5.0/js/foundation.min.js') }}"></script>
-	<script src="{{ asset('/js/jquery.scroll.js') }}"></script>
+	<script src="{{ asset('/js/jquery.shrinker.js') }}"></script>
 	<script>
       $(document).foundation();
     </script>

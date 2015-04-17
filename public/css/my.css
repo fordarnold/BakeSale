@@ -26,14 +26,6 @@ header nav img {
 	background-color: rgba(255,255,255,0.97);
 }
 
-.padding-on-header {
-	padding: 17px 0.9375rem 60px 0.9375rem;
-}
-
-.padding-on-header ul.title-area img {
-	margin: -5px 0 0 0;
-}
-
 .full-width {
 	min-width: 100%;
 }
@@ -79,4 +71,12 @@ header nav img {
 .top-bar .top-bar-section ul li a {
 	background: none;
 	color: #888;
+}
+
+.padding-on-header {
+	padding: 15px 0.9375rem 60px 0.9375rem;
+}
+.padding-on-header ul.title-area img {
+	margin: -5px 0 0 0;
+	height: 55px;
 }
