@@ -1,0 +1,11 @@
+/* general */
+body {
+	vertical-align: middle;
+}
+header {
+	background-color: beige;
+}
+footer {
+	background-color: beige;
+	padding: 20px 0;
+}
