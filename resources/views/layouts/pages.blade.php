@@ -20,39 +20,60 @@
 </head>
 <body>
 
-	<header class="fixed">
-		<nav class="top-bar" data-topbar role="navigation">
+	<header class="contain-to-grid fixed header-section">
+		<!-- get a better top nav bar plugin -->
+		<nav class="top-bar scroll-element" data-topbar role="navigation">
 			<ul class="title-area">
-				<li class="name"><h1><a href="{{ url('/') }}">BakeSale</a></h1></li>
+				<li class="name">
+					<a href="{{ url('/') }}">
+					<img src="{{ asset('/images/logo.svg') }}" alt="" id="logo-image">
+					</a>
+				</li>
+				<li class="toggle-topbar menu-icon"><a href="#"><span>Menu</span></a></li>
 			</ul>
+			<section class="top-bar-section">
+				<ul class="right">
+					<li class="active"><a href="{{ url('/') }}">Welcome Home</a></li>
+					<li><a href="{{ url('about') }}">About Us</a></li>
+					<li><a href="{{ url('contacts') }}">Contact Us</a></li>
+				</ul>
+			</section>
 		</nav>
 	</header>
 
-	<main>
+	<!-- main content -->
+	<main class="content-section">
 		@yield('content')
 	</main>
 
 	<footer>
 		<div class="row">
-			<div class="large-4 columns">
+			<div class="large-3 columns">
 				<h6>Copyright info</h6>
 				<ul>
 					<li>Copyright &copy; {{ date('Y') }}</li>
 				</ul>
 			</div>
-			<div class="large-4 columns">
+			<div class="large-3 columns">
 				<h6>Company info</h6>
 				<ul>
 					<li>About Us</li>
 					<li>Contact Us</li>
 				</ul>
 			</div>
-			<div class="large-4 columns">
+			<div class="large-3 columns">
 				<h6>Legal info</h6>
 				<ul>
 					<li>Terms and Conditions</li>
 					<li>Privacy Policy</li>
 					<li>Cookie Policy</li>
+				</ul>
+			</div>
+			<div class="large-3 columns">
+				<h6>Social profiles</h6>
+				<ul>
+					<li>Twitter</li>
+					<li>Facebook</li>
 				</ul>
 			</div>
 		</div>
