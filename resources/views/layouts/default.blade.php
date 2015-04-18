@@ -44,26 +44,26 @@
 			<div class="large-6 columns">
 				<p>Copyright &copy; Meridian Consult Inc.</p>
 			</div>
-			<div class="large-2 columns">
+			<div class="large-2 columns text-right">
 				<h6>Company info</h6>
 				<ul class="footer-links">
-					<li>About Us</li>
-					<li>Contact Us</li>
+					<li><a href="{{ url('about') }}">About Us</a></li>
+					<li><a href="{{ url('contacts') }}">Contact Us</a></li>
 				</ul>
 			</div>
-			<div class="large-2 columns">
+			<div class="large-2 columns text-right">
 				<h6>Legal info</h6>
 				<ul class="footer-links">
-					<li>Terms and Conditions</li>
-					<li>Privacy Policy</li>
-					<li>Cookie Policy</li>
+					<li><a href="{{ url('legal/terms') }}">Terms and Conditions</a></li>
+					<li><a href="{{ url('legal/privacy') }}">Privacy Policy</a></li>
+					<li><a href="{{ url('legal/cookies') }}">Cookie Policy</a></li>
 				</ul>
 			</div>
-			<div class="large-2 columns">
+			<div class="large-2 columns text-right">
 				<h6>Social profiles</h6>
 				<ul class="footer-links">
-					<li>Twitter</li>
-					<li>Facebook</li>
+					<li><a href="{{ url('social/twitter') }}">Twitter</a></li>
+					<li><a href="{{ url('social/facebook') }}">Facebook</a></li>
 				</ul>
 			</div>
 		</div>

@@ -9,7 +9,7 @@
 			<hgroup>
 				<h1>BakeSale</h1>
 				<h3 class="subheader">
-					the best <span style="color: brown;">bakery &amp; pastry shop</span> management system
+					<span style="color: brown;">bakery &amp; pastry shop</span> webstore and management system
 				</h3>
 			</hgroup>
 		</div>

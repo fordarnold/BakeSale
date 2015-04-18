@@ -3,7 +3,7 @@ body {
 	vertical-align: middle;
 }
 header {
-	background-color: beige;
+	
 }
 main {
 	padding: 20px 0 0 0;
@@ -20,10 +20,18 @@ header nav img {
 }
 footer p, footer h6 {
 	font-size: 0.73rem;
-	font-family: 'Droid Sans Mono', serif;
+	font-family: 'Droid Sans', serif;
 }
-footer ul.footer-links li  {
+footer ul.footer-links li {
 	font-size: 0.7em;
+	list-style: none;
+}
+footer ul.footer-links li a {
+	color: #ef4523;
+	transition: all 0.5s linear;
+}
+footer ul.footer-links li a:hover {
+	color: #aaaaaa;
 }
 
 /* shrinking header (on scroll) */
@@ -43,7 +51,7 @@ footer ul.footer-links li  {
 
 .top-bar {
 	background: none;
-	padding: 50px 0.9375rem 80px 0.9375rem;
+	padding: 40px 0.9375rem 70px 0.9375rem;
 	transition: all 0.5s ease 0.1s;
 }
 .top-bar ul.title-area img {
@@ -57,7 +65,7 @@ footer ul.footer-links li  {
 	line-height: 30px;
 	font-size: 12px;
 	padding: 0;
-	margin: 5px 0 0 0;
+	margin: 0px;
 	text-transform: uppercase;
 }
 .top-bar .top-bar-section ul li a:not(.button):hover {
@@ -85,9 +93,9 @@ footer ul.footer-links li  {
 }
 
 .padding-on-header {
-	padding: 15px 0.9375rem 60px 0.9375rem;
+	padding: 15px 0.9375rem 45px 0.9375rem;
 }
 .padding-on-header ul.title-area img {
-	margin: -5px 0 0 0;
+	margin: -12px 0 0 0;
 	height: 55px;
 }

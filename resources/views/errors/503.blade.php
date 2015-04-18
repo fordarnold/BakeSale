@@ -12,7 +12,9 @@
 					This is a restricted area.
 				</h3>
 				<p>
-					<a href="#" class="button minimal-button radius tiny alert">&laquo; Oops... lets go back</a>
+					<a href="{{ url ('/') }}" class="button minimal-button radius tiny alert">
+						&laquo; Oops... lets go back
+					</a>
 				</p>
 			</hgroup>
 		</div>
