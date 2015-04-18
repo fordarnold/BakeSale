@@ -13,6 +13,7 @@ footer {
 /* more specific */
 header nav img {
 	height: 7rem;
+	transition: height 0.5s;
 }
 
 /* shrinking header (on scroll) */
