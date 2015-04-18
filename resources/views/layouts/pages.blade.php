@@ -41,6 +41,8 @@
 		</nav>
 	</header>
 
+	<!-- whitespace --><p></p>
+
 	<!-- main content -->
 	<main class="content-section">
 		@yield('content')
