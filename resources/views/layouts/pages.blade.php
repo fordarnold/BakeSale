@@ -48,30 +48,27 @@
 
 	<footer>
 		<div class="row">
-			<div class="large-3 columns">
-				<h6>Copyright info</h6>
-				<ul>
-					<li>Copyright &copy; {{ date('Y') }}</li>
-				</ul>
+			<div class="large-6 columns">
+				<p>Copyright &copy; Meridian Consult Inc.</p>
 			</div>
-			<div class="large-3 columns">
+			<div class="large-2 columns">
 				<h6>Company info</h6>
-				<ul>
+				<ul class="footer-links">
 					<li>About Us</li>
 					<li>Contact Us</li>
 				</ul>
 			</div>
-			<div class="large-3 columns">
+			<div class="large-2 columns">
 				<h6>Legal info</h6>
-				<ul>
+				<ul class="footer-links">
 					<li>Terms and Conditions</li>
 					<li>Privacy Policy</li>
 					<li>Cookie Policy</li>
 				</ul>
 			</div>
-			<div class="large-3 columns">
+			<div class="large-2 columns">
 				<h6>Social profiles</h6>
-				<ul>
+				<ul class="footer-links">
 					<li>Twitter</li>
 					<li>Facebook</li>
 				</ul>

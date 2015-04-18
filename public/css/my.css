@@ -16,7 +16,7 @@ footer {
 /* more specific */
 header nav img {
 	height: 7rem;
-	transition: height 0.5s;
+	transition: all 0.5s linear;
 }
 footer p, footer h6 {
 	font-size: 0.73rem;
