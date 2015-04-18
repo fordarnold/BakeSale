@@ -12,6 +12,7 @@ class Kernel extends ConsoleKernel {
 	 */
 	protected $commands = [
 		'Bakesale\Console\Commands\Inspire',
+		'Bakesale\Console\Commands\Postcard',
 	];
 
 	/**
