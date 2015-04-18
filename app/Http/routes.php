@@ -23,3 +23,9 @@ Route::controllers([
 # social auth
 Route::get('users/login/social', 'Auth\SocialyseController@login');
 Route::get('users/login/social/failed', 'Auth\SocialyseController@abort');
+
+# test
+Route::get('errors/503', function ()
+{
+	return view('errors.503');
+});

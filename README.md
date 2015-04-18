@@ -1,6 +1,6 @@
 # Bakesale
 
-A personal side-project for testing features and pushing the boundaries of the Laravel PHP framework.
+A side-project for testing features and pushing the boundaries of the Laravel PHP framework. Personally, I see this as a __web-store for a bakery business + backend admin management system__
 
 ## Features
 
