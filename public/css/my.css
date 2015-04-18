@@ -5,6 +5,9 @@ body {
 header {
 	background-color: beige;
 }
+main {
+	padding: 20px 0 0 0;
+}
 footer {
 	background-color: beige;
 	padding: 20px 0;
@@ -15,9 +18,16 @@ header nav img {
 	height: 7rem;
 	transition: height 0.5s;
 }
+footer p, footer h6 {
+	font-size: 0.73rem;
+	font-family: 'Droid Sans Mono', serif;
+}
+footer ul.footer-links li  {
+	font-size: 0.7em;
+}
 
 /* shrinking header (on scroll) */
-.header-section {
+.shrinking-header {
 	-webkit-box-shadow: 0 0 5px 0 rgba(0,0,0,0.4);
 	box-shadow: 0 0 5px 0 rgba(0,0,0,0.4);
 	min-width: 100%;

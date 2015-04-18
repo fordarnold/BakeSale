@@ -20,7 +20,7 @@
 </head>
 <body>
 
-	<header class="contain-to-grid fixed header-section">
+	<header class="contain-to-grid fixed shrinking-header">
 		<!-- get a better top nav bar plugin -->
 		<nav class="top-bar scroll-element" data-topbar role="navigation">
 			<ul class="title-area">
@@ -40,8 +40,6 @@
 			</section>
 		</nav>
 	</header>
-
-	<!-- whitespace --><p></p>
 
 	<!-- main content -->
 	<main class="content-section">
