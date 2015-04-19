@@ -67,4 +67,25 @@
 	</div>
 </div>
 
+<div class="row">
+	<div class="large-4 columns">
+		<article>
+			<h4>Customers</h4>
+			<p>A database containing information about all your customers.</p>
+		</article>
+	</div>
+	<div class="large-4 columns">
+		<article>
+			<h4>Suppliers</h4>
+			<p>A database containing information about all suppliers of your business.</p>
+		</article>
+	</div>
+	<div class="large-4 columns">
+		<article>
+			<h4>Multi-Store management</h4>
+			<p>Does your bakery have more than one store (branch)?</p>
+		</article>
+	</div>
+</div>
+
 @endsection
