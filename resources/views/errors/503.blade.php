@@ -2,6 +2,7 @@
 
 @section('content')
 
+<section class="intro">
 <div class="row">
 	<div class="large-12 columns">
 
@@ -21,5 +22,6 @@
 
 	</div>
 </div>
+</section>
 
 @endsection
