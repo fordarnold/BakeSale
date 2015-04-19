@@ -4,6 +4,8 @@ use Illuminate\Console\Command;
 use Symfony\Component\Console\Input\InputOption;
 use Symfony\Component\Console\Input\InputArgument;
 
+use Bakesale\Services\Holidays;
+
 class Postcard extends Command {
 
 	/**
@@ -37,19 +39,11 @@ class Postcard extends Command {
 	 */
 	public function fire()
 	{
-		$holiday = $this->getHoliday();
+		$holiday = Holidays::getHoliday();
 
-		$this->info('happy '.$holiday.' to our dear customers');
-	}
+		// send greeting email
 
-	/**
-	 * Get the public / national holiday of a specified date
-	 * 
-	 * @param  string $date The date input (default: today)
-	 * @return string       The holiday on date provided
-	 */
-	public function getHoliday($date='')
-	{
-		return 'new year';
+		$this->info('happy '.$holiday.' our dear customers'); // temporary
 	}
+	
 }
