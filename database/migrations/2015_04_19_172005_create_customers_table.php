@@ -21,6 +21,7 @@ class CreateCustomersTable extends Migration {
 			$table->string('company')->nullable();
 			$table->text('bio');
 			$table->string('loyalty_id')->unique();
+			$table->integer('user_id')->unique();
 			
 			$table->timestamps();
 		});
