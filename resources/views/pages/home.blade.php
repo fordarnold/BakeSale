@@ -2,6 +2,7 @@
 
 @section('content')
 
+<section class="intro">
 <div class="row">
 	<div class="large-12 columns">
 
@@ -12,10 +13,18 @@
 					<span style="color: brown;">bakery &amp; pastry shop</span> webstore and management system
 				</h3>
 			</hgroup>
+			<p>
+				<a href="{{ url ('install') }}" class="button radius secondary success">
+					Create your web bakery
+				</a>
+			</p>
 		</div>
 
 	</div>
 </div>
+</section>
+
+<p></p>
 
 <div class="row">
 	<div class="large-12 columns text-center">
