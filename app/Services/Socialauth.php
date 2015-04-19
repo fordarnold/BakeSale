@@ -1,10 +1,11 @@
-<?php namespace Bakesale;
+<?php namespace Bakesale\Services;
 
 use Laravel\Socialite\Contracts\Factory as Socialite;
 use Illuminate\Contracts\Auth\Guard as Guard;
+
 use Bakesale\Repositories\UserRepo as UserRepo;
 
-class SocialAuth {
+class Socialauth {
 
 	private $users;
 	private $socialite;

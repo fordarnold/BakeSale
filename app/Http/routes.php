@@ -29,3 +29,23 @@ Route::get('errors/503', function ()
 {
 	return view('errors.503');
 });
+
+# rest api
+Route::group(['prefix' => 'api'], function ()
+{
+	Route::resource('users', 'Api\UsersController'); # add to Genesis4Laravel
+
+	Route::resource('categories', 'Api\CategoriesController');
+	Route::resource('products', 'Api\ProductsController');
+	Route::resource('tags', 'Api\TagsController');
+	Route::resource('menus', 'Api\MenusController');
+
+	Route::resource('customers', 'Api\CustomersController');
+	Route::resource('suppliers', 'Api\SuppliersController');
+
+	Route::resource('sales', 'Api\SalesController');
+	Route::resource('purchases', 'Api\PurchasesController');
+	Route::resource('receipts', 'Api\ReceiptsController');
+
+	Route::resource('stocks', 'Api\StocksController');
+});
