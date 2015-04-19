@@ -25,6 +25,12 @@ class CategoriesTableSeeder extends Seeder {
 		]);
 
 		Category::create([
+			'name' 	=> 'Beverages',
+			'description' => 'Coffee, tea and other drinks',
+			'approved' => 1
+		]);
+
+		Category::create([
 			'name' 	=> 'Shakes',
 			'description' => 'Milkshakes, fruit shakes, et al.',
 			'approved' => 1
