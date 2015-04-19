@@ -15,7 +15,7 @@
 			</hgroup>
 			<p>
 				<a href="{{ url ('install') }}" class="button radius secondary success">
-					Create your web bakery
+					Create your web store!
 				</a>
 			</p>
 		</div>
@@ -27,33 +27,39 @@
 <p></p>
 
 <div class="row">
-	<div class="large-12 columns text-center">
-
+	<div class="large-4 columns">
 		<article>
 			<h4>Products on sale</h4>
-			<p>Store, edit or delete an unlimited number of products you offer for sale.</p>
+			<p>Store, edit or delete an *unlimited* number of products you offer for sale.</p>
 		</article>
-
+	</div>
+	<div class="large-4 columns">
 		<article>
 			<h4>Categories of products</h4>
 			<p>BakeSale gives you the flexibity to group products into categories for better organisation.</p>
 		</article>
-
+	</div>
+	<div class="large-4 columns">
 		<article>
 			<h4>Sales management</h4>
 			<p>Instantly record product sales as soon as they are made... even on-the-go.</p>
 		</article>
-
+	</div>
+</div>
+<div class="row">
+	<div class="large-4 columns">
 		<article>
 			<h4>Purchases management</h4>
 			<p>Instantly record purchases of new supplies for your bakery.</p>
 		</article>
-
+	</div>
+	<div class="large-4 columns">
 		<article>
 			<h4>Promotions</h4>
 			<p>Easily attach discounts to sales or purchases, or even individual products.</p>
 		</article>
-
+	</div>
+	<div class="large-4 columns">
 		<article>
 			<h4>Multi-Store management</h4>
 			<p>Does your bakery have more than one store (branch)?</p>
