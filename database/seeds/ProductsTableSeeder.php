@@ -7,7 +7,7 @@ class ProductsTableSeeder extends Seeder {
     public function run()
     {
         Product::create([
-			'category_id' => dechex( mt_rand(100000000, 999999999) ),
+			'category_id' => 1,
 			'name' 	=> 'Marble Cake',
 			'vendor' 	=> 'La Galette Inc',
 			'unit_price' => 1000.00,
