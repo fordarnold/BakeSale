@@ -11,6 +11,7 @@
 
 	<!-- zurb foundation css -->
 	<link href="{{ asset('/vendor/foundation-5.5.0/css/foundation.css') }}" rel="stylesheet">
+	<!-- todo: use bass css library for ui goodness -->
 
 	<!-- my css -->
 	<link href="{{ asset('/css/my.css') }}" rel="stylesheet">
