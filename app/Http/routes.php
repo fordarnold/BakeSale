@@ -11,8 +11,8 @@
 |
 */
 
+# public urls
 Route::get('/', 'WelcomeController@index');
-
 Route::get('home', 'HomeController@index');
 
 Route::controllers([
@@ -28,6 +28,20 @@ Route::get('users/login/social/failed', 'Auth\SocialyseController@abort');
 Route::get('errors/503', function ()
 {
 	return view('errors.503');
+});
+
+# admin back-end
+Route::group(['prefix' => 'backroom'], function ()
+{
+	// administrator backend routes go here
+	Route::get('/', 'Backroom\WelcomeController@index');
+});
+
+# user front-end
+Route::group(['prefix' => 'webstore'], function ()
+{
+	// logged-in-user front-end routes go here
+	Route::get('/', 'Webstore\WelcomeController@index');
 });
 
 # rest api
