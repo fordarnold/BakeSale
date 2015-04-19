@@ -12,15 +12,16 @@ class CreateCategoriesTable extends Migration {
 	 */
 	public function up()
 	{
-		Schema::create('categories', function(Blueprint $table) {
-      $table->increments('id');
+		Schema::create('categories', function(Blueprint $table) 
+		{
+			$table->increments('id');
 
-      $table->string('name')->unique();
-      $table->text('description')->nullable();
-      $table->boolean('disabled')->default(false);
+			$table->string('name')->unique();
+			$table->text('description')->nullable();
+			$table->boolean('approved')->default(false);
 
-      $table->timestamps();
-    });
+			$table->timestamps();
+		});
 	}
 
 	/**
