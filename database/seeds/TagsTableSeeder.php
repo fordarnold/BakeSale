@@ -2,6 +2,9 @@
 
 use Illuminate\Database\Seeder;
 
+use Bakesale\Tag;
+use Bakesale\Product;
+
 class TagsTableSeeder extends Seeder {
 
     public function run()

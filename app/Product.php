@@ -21,4 +21,9 @@ class Product extends Model {
 		$this->belongsToMany('Tag');
 	}
 
+	public function menus()
+	{
+		$this->belongsToMany('Menu');
+	}
+
 }
