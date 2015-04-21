@@ -9,42 +9,42 @@ class ModulesTableSeeder extends Seeder {
     	$array = array(
     		[
 	        	'name' => 'the entry experience',
-	        	'description' => '',
+	        	'description' => 'welcoming a user to the app experience',
 	        	'enabled' => true
     		],
     		[
 	        	'name' => 'queue management',
-	        	'description' => '',
+	        	'description' => 'customer queue headaches gone :)',
 	        	'enabled' => false
     		],
     		[
 	        	'name' => 'products for sale',
-	        	'description' => '',
+	        	'description' => 'yikes... stock is involved',
 	        	'enabled' => true
     		],
     		[
 	        	'name' => 'services for sale',
-	        	'description' => '',
+	        	'description' => 'whew... no stock involved',
 	        	'enabled' => false
     		],
     		[
 	        	'name' => 'menus',
-	        	'description' => '',
+	        	'description' => 'organise your offerings into creative groups',
 	        	'enabled' => true
     		],
     		[
 	        	'name' => 'tags',
-	        	'description' => '',
+	        	'description' => 'used to describe the specifics about an item',
 	        	'enabled' => true
     		],
     		[
 	        	'name' => 'backroom',
-	        	'description' => 'The administrator behind-the-scenes area',
+	        	'description' => 'the administrator behind-the-scenes area',
 	        	'enabled' => true
     		],
     		[
 	        	'name' => 'table service',
-	        	'description' => 'Premium service for bigger premises',
+	        	'description' => 'premium service for bigger premises',
 	        	'enabled' => false
     		],
     		[
@@ -54,9 +54,14 @@ class ModulesTableSeeder extends Seeder {
     		],
     		[
 	        	'name' => 'postcards',
-	        	'description' => 'Seasons greetings sent to customer email',
+	        	'description' => 'seasons greetings sent to customer email',
 	        	'enabled' => true
-    		]
+    		],
+    		[
+	        	'name' => 'loyalty program',
+	        	'description' => 'where do your customers loyalties lie?',
+	        	'enabled' => false
+    		],
     	);
 
         Module::forceCreate($array);

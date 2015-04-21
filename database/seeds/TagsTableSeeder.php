@@ -2,14 +2,28 @@
 
 use Illuminate\Database\Seeder;
 
-// composer require laracasts/testdummy
-use Laracasts\TestDummy\Factory as TestDummy;
-
 class TagsTableSeeder extends Seeder {
 
     public function run()
     {
-        // TestDummy::times(20)->create('App\Post');
+        Tag::create([
+        	'name' => 'marble cake'
+        ]);
+        Tag::create([
+        	'name' => 'sandwich'
+        ]);
+        Tag::create([
+        	'name' => 'salami'
+        ]);
+        Tag::create([
+        	'name' => 'espresso'
+        ]);
+        Tag::create([
+        	'name' => 'coffee'
+        ]);
+        Tag::create([
+        	'name' => 'strong'
+        ]);
     }
 
 }

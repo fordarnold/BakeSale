@@ -35,6 +35,9 @@ Route::group(['prefix' => 'backroom'], function ()
 {
 	// administrator backend routes go here
 	Route::get('/', 'Backroom\WelcomeController@index');
+
+	Route::resource('tags', 'Backroom\TagsController');
+	Route::get('tags/suggested', 'Backroom\TagsController@suggested');
 });
 
 # user front-end
