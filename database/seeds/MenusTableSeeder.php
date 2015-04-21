@@ -10,8 +10,6 @@ class MenusTableSeeder extends Seeder {
         	'name' => '2015 specials',
             'description' => 'All special meals served in 2015'
         ]);
-
-        
     }
 
 }
