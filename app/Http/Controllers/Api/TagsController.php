@@ -20,16 +20,6 @@ class TagsController extends Controller {
 	}
 
 	/**
-	 * Show the form for creating a new resource.
-	 *
-	 * @return Response
-	 */
-	public function create()
-	{
-		//
-	}
-
-	/**
 	 * Store a newly created resource in storage.
 	 *
 	 * @return Response
@@ -57,23 +47,12 @@ class TagsController extends Controller {
 	}
 
 	/**
-	 * Show the form for editing the specified resource.
-	 *
-	 * @param  int  $id
-	 * @return Response
-	 */
-	public function edit($id)
-	{
-		//
-	}
-
-	/**
 	 * Update the specified resource in storage.
 	 *
 	 * @param  int  $id
 	 * @return Response
 	 */
-	public function update($id)
+	public function update($id, Request $request)
 	{
 		$tag = Tag::find($id);
 
@@ -91,7 +70,9 @@ class TagsController extends Controller {
 	 */
 	public function destroy($id)
 	{
-		//
+		$tag = Tag::find($id);
+
+		return $tag->destroy();
 	}
 
 }
