@@ -7,22 +7,28 @@ class TagsTableSeeder extends Seeder {
     public function run()
     {
         Tag::create([
-        	'name' => 'marble cake'
+        	'name' => 'marble cake',
+            'approved' => true
         ]);
         Tag::create([
-        	'name' => 'sandwich'
+        	'name' => 'sandwich',
+            'approved' => true
         ]);
         Tag::create([
-        	'name' => 'salami'
+        	'name' => 'salami',
+            'approved' => true
         ]);
         Tag::create([
-        	'name' => 'espresso'
+        	'name' => 'espresso',
+            'approved' => true
         ]);
         Tag::create([
-        	'name' => 'coffee'
+        	'name' => 'coffee',
+            'approved' => true
         ]);
         Tag::create([
-        	'name' => 'strong'
+        	'name' => 'strong',
+            'approved' => true
         ]);
 
         // attach tags to some products

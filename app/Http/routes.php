@@ -36,8 +36,8 @@ Route::group(['prefix' => 'backroom'], function ()
 	// administrator backend routes go here
 	Route::get('/', 'Backroom\WelcomeController@index');
 
-	Route::resource('tags', 'Backroom\TagsController');
 	Route::get('tags/suggested', 'Backroom\TagsController@suggested');
+	Route::resource('tags', 'Backroom\TagsController');
 });
 
 # user front-end
@@ -46,11 +46,11 @@ Route::group(['prefix' => 'webstore'], function ()
 	// logged-in-user front-end routes go here
 	Route::get('/', 'Webstore\WelcomeController@index');
 
-	Route::resource('categories', 'Webstore\CategoriesController');
 	Route::get('categories/suggest', 'Webstore\CategoriesController@suggest');
-
-	Route::resource('tags', 'Webstore\TagsController');
 	Route::get('tags/suggest', 'Webstore\TagsController@suggest');
+	
+	Route::resource('categories', 'Webstore\CategoriesController');
+	Route::resource('tags', 'Webstore\TagsController');
 });
 
 # rest api
