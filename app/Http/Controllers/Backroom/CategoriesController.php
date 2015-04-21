@@ -16,9 +16,7 @@ class CategoriesController extends Controller {
 	 */
 	public function index()
 	{
-		$categories = Category::all();
-		
-		return view('backroom.categories.index');
+		return view('backroom.categories.index', array( 'categories' => Category::all() ));
 	}
 
 	/**

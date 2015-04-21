@@ -1,0 +1,23 @@
+/* general styles */
+
+main {
+	padding-top: 20px;
+}
+
+footer {
+	background: cornflowerblue;
+}
+
+/* a bit more specific styles */ 
+
+table .button {
+	margin-bottom: 0;
+} 
+
+/* way more specific styles */
+
+footer p, footer h6 {
+	color: #FFF;
+	font-weight: bold;
+	font-family: 'Droid Sans', serif;
+}
