@@ -5,7 +5,7 @@
 composer.lock
 composer.phar
 
-# node.js
+# node js
 
 /node_modules
 
@@ -14,7 +14,6 @@ composer.phar
 .DS_Store
 Thumbs.db
 /.idea
-
 *.mp4
 *.mkv
 /public/video
