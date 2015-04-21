@@ -2,6 +2,8 @@
 
 use Illuminate\Database\Seeder;
 
+use Bakesale\Module;
+
 class ModulesTableSeeder extends Seeder {
 
     public function run()
@@ -29,7 +31,7 @@ class ModulesTableSeeder extends Seeder {
     		],
     		[
 	        	'name' => 'menus',
-	        	'description' => 'organise your offerings into creative groups',
+	        	'description' => 'organise your offerings into creative menu lists (similar to Pinterest boards)',
 	        	'enabled' => true
     		],
     		[
