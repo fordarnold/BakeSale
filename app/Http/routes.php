@@ -25,9 +25,9 @@ Route::get('users/login/social', 'Auth\SocialyseController@login');
 Route::get('users/login/social/failed', 'Auth\SocialyseController@abort');
 
 # test
-Route::get('errors/503', function ()
+Route::get('test', function ()
 {
-	return view('errors.503');
+	return Bakesale\Services\TableService::isEnabled();
 });
 
 # admin back-end
@@ -42,6 +42,12 @@ Route::group(['prefix' => 'webstore'], function ()
 {
 	// logged-in-user front-end routes go here
 	Route::get('/', 'Webstore\WelcomeController@index');
+
+	Route::resource('categories', 'Webstore\CategoriesController');
+	Route::get('categories/suggest', 'Webstore\CategoriesController@suggest');
+
+	Route::resource('tags', 'Webstore\TagsController');
+	Route::get('tags/suggest', 'Webstore\TagsController@suggest');
 });
 
 # rest api
