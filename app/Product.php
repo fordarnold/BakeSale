@@ -16,6 +16,12 @@ class Product extends Model {
 	/**
 	 * Relationships
 	 */
+	
+	public function category()
+	{
+		$this->belongsTo('Category');
+	}
+
 	public function tags()
 	{
 		$this->belongsToMany('Tag');

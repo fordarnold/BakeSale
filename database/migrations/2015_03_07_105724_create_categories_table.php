@@ -18,7 +18,7 @@ class CreateCategoriesTable extends Migration {
 
 			$table->string('name')->unique();
 			$table->text('description')->nullable();
-			$table->boolean('approved')->default(false);
+			$table->boolean('approved')->default(true);
 
 			$table->timestamps();
 		});
