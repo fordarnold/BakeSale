@@ -16,8 +16,9 @@ class CategoriesController extends Controller {
 	 */
 	public function index()
 	{
-		return Category::all();
-		// return view('backroom.categories.index');
+		$categories = Category::all();
+		
+		return view('backroom.categories.index');
 	}
 
 	/**
