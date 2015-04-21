@@ -32,6 +32,9 @@ class DatabaseSeeder extends Seeder {
 		// $this->call('ReceiptsTableSeeder');
 
 		// $this->call('StocksTableSeeder');
+		
+		// success message
+		$this->command->info('>>> Seeding Completed Successfully :) <<<');
 	}
 
 }
