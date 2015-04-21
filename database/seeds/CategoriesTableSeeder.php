@@ -2,6 +2,8 @@
 
 use Illuminate\Database\Seeder;
 
+use Bakesale\Category;
+
 class CategoriesTableSeeder extends Seeder {
 
     public function run()

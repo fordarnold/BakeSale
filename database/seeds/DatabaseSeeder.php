@@ -15,23 +15,23 @@ class DatabaseSeeder extends Seeder {
 		Model::unguard();
 
 		// $this->call('SystemsTableSeeder');
-		$this->call('ModulesTableSeeder');
+		// $this->call('ModulesTableSeeder');
 
-		$this->call('UsersTableSeeder');
+		// $this->call('UsersTableSeeder');
 		
 		$this->call('CategoriesTableSeeder');
-		$this->call('ProductsTableSeeder');
-		$this->call('TagsTableSeeder');
-		$this->call('MenusTableSeeder');
+		// $this->call('ProductsTableSeeder');
+		// $this->call('TagsTableSeeder');
+		// $this->call('MenusTableSeeder');
 
-		$this->call('CustomersTableSeeder');
-		$this->call('SuppliersTableSeeder');
+		// $this->call('CustomersTableSeeder');
+		// $this->call('SuppliersTableSeeder');
 
-		$this->call('SalesTableSeeder');
-		$this->call('PurchasesTableSeeder');
-		$this->call('ReceiptsTableSeeder');
+		// $this->call('SalesTableSeeder');
+		// $this->call('PurchasesTableSeeder');
+		// $this->call('ReceiptsTableSeeder');
 
-		$this->call('StocksTableSeeder');
+		// $this->call('StocksTableSeeder');
 	}
 
 }

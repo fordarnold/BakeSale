@@ -1,9 +1,11 @@
-<?php namespace Bakesale\Http\Controllers\Webstore;
+<?php namespace Bakesale\Http\Controllers\Backroom;
 
 use Bakesale\Http\Requests;
 use Bakesale\Http\Controllers\Controller;
 
 use Illuminate\Http\Request;
+
+use Bakesale\Category;
 
 class CategoriesController extends Controller {
 
@@ -14,7 +16,8 @@ class CategoriesController extends Controller {
 	 */
 	public function index()
 	{
-		return view('backroom.categories.index');
+		return Category::all();
+		// return view('backroom.categories.index');
 	}
 
 	/**

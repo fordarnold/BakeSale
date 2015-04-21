@@ -37,7 +37,9 @@ Route::group(['prefix' => 'backroom'], function ()
 	Route::get('/', 'Backroom\WelcomeController@index');
 
 	Route::get('tags/suggested', 'Backroom\TagsController@suggested');
+	
 	Route::resource('tags', 'Backroom\TagsController');
+	Route::resource('categories', 'Backroom\CategoriesController');
 });
 
 # user front-end
