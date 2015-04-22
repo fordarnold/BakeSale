@@ -10,16 +10,6 @@ class Menu extends Model {
 
 	protected $fillable = array('name', 'description', 'photo', 'template_id');
 
-	public function __construct()
-	{
-		parent::__construct();
-
-		if(is_null($this->photo))
-		{
-			$this->photo = 'http://photos.com/default-menu-photo.svg';
-		}
-	}
-
 	/**
 	 * Relationships
 	 */
@@ -39,5 +29,16 @@ class Menu extends Model {
 	/**
 	 * Support functions
 	 */
+
+	public function __construct()
+	{
+		parent::__construct();
+
+		// may need this one soon
+		if(is_null($this->photo))
+		{
+			$this->photo = 'http://photos.com/default-menu-photo.svg';
+		}
+	}
 
 }

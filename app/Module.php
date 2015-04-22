@@ -8,4 +8,6 @@ class Module extends Model {
 
 	protected $perPage = 20;
 
+	protected $fillable = array('name', 'description', 'enabled');
+
 }
