@@ -8,7 +8,7 @@ class Customer extends Model {
 
 	protected $perPage = 20;
 
-	protected $fillable = array('user_id', 'first_name', 'last_name', 'company', 'bio', 'loyalty_id');
+	protected $fillable = array('user_id', 'first_name', 'last_name', 'company', 'bio');
 
 	/**
 	 * Relationships
@@ -17,11 +17,6 @@ class Customer extends Model {
 	public function user()
 	{
 		$this->belongsTo('User');
-	}
-
-	public function loyalty() // customer has got loyalties
-	{
-		$this->belongsTo('Loyalty');
 	}
 
 }

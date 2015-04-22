@@ -20,7 +20,6 @@ class CreateCustomersTable extends Migration {
 			$table->string('last_name');
 			$table->string('company')->nullable();
 			$table->text('bio')->nullable();
-			$table->integer('loyalty_id')->unique()->nullable(); // can be enrolled in loyalty program
 			$table->timestamps();
 		});
 	}

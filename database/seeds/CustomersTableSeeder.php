@@ -13,8 +13,7 @@ class CustomersTableSeeder extends Seeder {
 			'first_name' => 'John',
 			'last_name' => 'Cena',
 			'company' => 'Random Company Ltd',
-			'bio' => 'World champion wrestler',
-			'loyalty_id' => 1
+			'bio' => 'World champion wrestler'
 		]);
 
 		Customer::create([
@@ -22,8 +21,7 @@ class CustomersTableSeeder extends Seeder {
 			'first_name' => 'Jack',
 			'last_name' => 'Doe',
 			'company' => 'Random Inc',
-			'bio' => 'Unknown personnel',
-			'loyalty_id' => 2
+			'bio' => 'Unknown personnel'
 		]);
     }
 
