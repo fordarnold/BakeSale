@@ -33,7 +33,6 @@ Route::get('test', function ()
 # admin back-end
 Route::group(['prefix' => 'backroom'], function ()
 {
-	// administrator backend routes go here
 	Route::get('/', 'Backroom\WelcomeController@index');
 
 	Route::get('tags/suggested', 'Backroom\TagsController@suggested');
@@ -42,10 +41,9 @@ Route::group(['prefix' => 'backroom'], function ()
 	Route::resource('categories', 'Backroom\CategoriesController');
 });
 
-# user front-end
+# authorized user front-end
 Route::group(['prefix' => 'webstore'], function ()
 {
-	// logged-in-user front-end routes go here
 	Route::get('/', 'Webstore\WelcomeController@index');
 
 	Route::get('categories/suggest', 'Webstore\CategoriesController@suggest');

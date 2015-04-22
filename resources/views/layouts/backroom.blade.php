@@ -48,7 +48,7 @@
 		<div class="row">
 			<div class="large-12 columns text-center">
 				<p class="copyright">
-					Copyright &copy; Meridian Consult Inc.
+					Copyright &copy; {{ date('Y') }}, Meridian Consult Inc. 
 					<br>
 					All Rights Reserved.
 				</p>
@@ -59,7 +59,6 @@
 	<!-- scripts -->
 	<script src="{{ asset('/vendor/foundation-5.5.0/js/vendor/jquery.js') }}"></script>
 	<script src="{{ asset('/vendor/foundation-5.5.0/js/foundation.min.js') }}"></script>
-	<script src="{{ asset('/js/jquery.shrinker.js') }}"></script>
 	<script>
       $(document).foundation();
     </script>
