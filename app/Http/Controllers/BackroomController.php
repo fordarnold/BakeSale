@@ -1,5 +1,7 @@
 <?php namespace Bakesale\Http\Controllers;
 
+use Illuminate\Http\Request;
+
 class BackroomController extends Controller {
 
 	/*
@@ -8,7 +10,8 @@ class BackroomController extends Controller {
 	|--------------------------------------------------------------------------
 	| 
 	| The 'Backroom' is the backend administrator user interface.
-	| This controller checks to see if requests are coming from an admin user.
+	| This controller checks to see if requests are coming from an admin user,
+	| and so much more.
 	|
 	*/
 
@@ -19,17 +22,17 @@ class BackroomController extends Controller {
 	 */
 	public function __construct()
 	{
-		$this->middleware('auth');
+		// $this->middleware('auth');
 	}
 
 	/**
-	 * Show the application dashboard to the user.
-	 *
-	 * @return Response
+	 * Example function
+	 * 
+	 * @return Request Get the incoming HTTP request
 	 */
-	public function index()
+	public function request(Request $request)
 	{
-		return view('home');
+		return $request;
 	}
 
 }

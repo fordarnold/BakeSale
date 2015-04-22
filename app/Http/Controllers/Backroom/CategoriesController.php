@@ -1,13 +1,13 @@
 <?php namespace Bakesale\Http\Controllers\Backroom;
 
 use Bakesale\Http\Requests;
-use Bakesale\Http\Controllers\Controller;
+use Bakesale\Http\Controllers\BackroomController;
 
 use Illuminate\Http\Request;
 
 use Bakesale\Category;
 
-class CategoriesController extends Controller {
+class CategoriesController extends BackroomController {
 
 	/**
 	 * Show a listing of all resources.
@@ -16,7 +16,8 @@ class CategoriesController extends Controller {
 	 */
 	public function index()
 	{
-		return view('backroom.categories.index', array( 'categories' => Category::all() ));
+		return $this->request()->method();
+		// return view('backroom.categories.index', array( 'categories' => Category::all() ));
 	}
 
 	/**
