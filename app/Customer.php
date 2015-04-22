@@ -19,4 +19,9 @@ class Customer extends Model {
 		$this->belongsTo('User');
 	}
 
+	public function loyalty()
+	{
+		$this->hasOne('Loyalty');
+	}
+
 }
