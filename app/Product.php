@@ -22,10 +22,10 @@ class Product extends Model {
 		$this->belongsTo('Category');
 	}
 
-	public function currency()
-	{
-		$this->belongsTo('Currency');
-	}
+	// public function currency()
+	// {
+	// 	$this->belongsTo('Currency');
+	// }
 
 	public function tags()
 	{
