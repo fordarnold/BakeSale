@@ -9,9 +9,14 @@
 			<hgroup>
 				<h2>Categories</h2>
 				<h4 class="subheader">The full list of product categories</h4>
+				<hr>
 			</hgroup>
 
-			<br>
+			<div class="row">
+				<div class="large-12 columns">
+					<a href="{{ url('backroom/categories/create') }}" class="button small radius success">Add Category</a>
+				</div>
+			</div>
 			
 			<table class="fullspan">
 				<thead>
@@ -26,13 +31,17 @@
 					@foreach ($categories as $category)
 					<tr>
 						<td>
-							<a href="{{ url('backroom/categories/'.$category->id) }}">{{ $category->name }}</a>
+							<a href="{{ url('backroom/categories/'.$category->id.'/edit') }}">{{ $category->name }}</a>
 						</td>
 						<td>{{ $category->description }}</td>
 						<td>{{ $category->approved == 1 ? 'yes' : 'no' }}</td>
 						<td>
-							<a href="#" class="button tiny radius">Edit</a></li>
-							<a href="#" class="button tiny radius alert">Delete</a>
+							<a href="{{ url('backroom/categories/'.$category->id.'/edit') }}" class="button tiny radius">
+								Edit
+							</a>
+							<a href="{{ url('backroom/categories/'.$category->id.'/delete') }}" class="button tiny radius alert">
+								Delete
+							</a>
 						</td>	
 					</tr>
 					@endforeach

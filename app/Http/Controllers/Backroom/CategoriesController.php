@@ -10,7 +10,7 @@ use Bakesale\Category;
 class CategoriesController extends Controller {
 
 	/**
-	 * Show a listing of all categories.
+	 * Show a listing of all resources.
 	 *
 	 * @return View
 	 */
@@ -34,9 +34,15 @@ class CategoriesController extends Controller {
 	 *
 	 * @return Response
 	 */
-	public function store()
+	public function store(Request $request)
 	{
-		//
+		$category = new Category;
+
+		$category->name = $request->get('name');
+		$category->description = $request->get('description');
+		$category->approved = 1; // is approved by default for admins
+
+		$category->save();
 	}
 
 	/**
@@ -54,11 +60,15 @@ class CategoriesController extends Controller {
 	 * Show the form for editing the specified resource.
 	 *
 	 * @param  int  $id
-	 * @return Response
+	 * @return View
 	 */
 	public function edit($id)
 	{
-		return view('backroom.categories.edit');
+		$category = Category::find($id);
+
+		$data = array( 'category' => $category );
+
+		return view('backroom.categories.edit', $data);
 	}
 
 	/**
@@ -69,7 +79,7 @@ class CategoriesController extends Controller {
 	 */
 	public function update($id)
 	{
-		//
+		return 'Hello';
 	}
 
 	/**
