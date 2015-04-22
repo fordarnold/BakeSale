@@ -1,14 +1,31 @@
 /* general styles */
 
+body {
+	font-family: 'TakaoPGothic', sans-serif;
+}
+
 main {
 	padding-top: 20px;
+	min-height: 100%;
 }
 
 footer {
-	background: cornflowerblue;
+
+}
+
+h1, h2, h3, h4, h5, h6 {
+	font-family: 'DejaVu Serif Condensed', serif;
 }
 
 /* a bit more specific styles */ 
+
+h1 a, h2 a, h3 a, h4 a, h5 a, h6 a {
+	font-family: 'DejaVu Serif Condensed', serif;
+}
+
+a, a.button {
+	font-family: 'TakaoPGothic', sans-serif;
+}
 
 table .button {
 	margin-bottom: 0;
@@ -16,8 +33,32 @@ table .button {
 
 /* way more specific styles */
 
-footer p, footer h6 {
-	color: #FFF;
-	font-weight: bold;
-	font-family: 'Droid Sans', serif;
+.top-bar {
+	background: darkcyan;
+}
+
+/* way way more specific styles */
+
+footer p.copyright {
+	font-size: 0.7rem;
+}
+
+.top-bar .title-area .name h1 {
+	transition: all 0.5s;
+}
+.top-bar .title-area .name h1:hover {
+	font-size: 1.1rem;
+}
+.top-bar .top-bar-section ul li, .top-bar .top-bar-section ul li a:not(.button) {
+	background: none;
+	transition: all 0.5s;
+}
+.top-bar .top-bar-section ul li:hover, .top-bar .top-bar-section ul li a:not(.button):hover {
+	background: forestgreen;
+}
+.top-bar .top-bar-section ul li a:not(.button), .top-bar .top-bar-section ul li.active a:not(.button) {
+	background: none;
+	font-size: 12px;
+	font-family: 'TakaoPGothic', sans-serif;
+	text-transform: uppercase;
 }

@@ -8,7 +8,7 @@
 
 			<hgroup>
 				<h2>Categories</h2>
-				<h4 class="subheader">The full list of categories</h4>
+				<h4 class="subheader">The full list of product categories</h4>
 			</hgroup>
 
 			<br>

@@ -2,6 +2,7 @@
 
 body {
 	vertical-align: middle;
+	overflow: scroll;
 }
 header {
 	
@@ -10,7 +11,7 @@ main {
 	padding-bottom: 10px;
 }
 footer {
-	background-color: beige;
+	background-color: darkslateblue;
 	padding: 20px 0 5px 0;
 }
 
@@ -31,6 +32,7 @@ main section.intro .panel {
 
 footer p, footer h6 {
 	font-size: 0.75rem;
+	color: #FFF;
 	font-family: 'Droid Sans', serif;
 }
 footer ul.footer-links li {

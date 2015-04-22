@@ -26,7 +26,7 @@
 		<nav class="top-bar" data-topbar role="navigation">
 			<ul class="title-area">
 				<li class="name">
-					<h1><a href="{{ url('/') }}" title="The Backroom">The Backroom @ Bakesale</a></h1>
+					<h1><a href="{{ url('/') }}" title="The Backroom">Bakesale \ The Backroom</a></h1>
 				</li>
 				<li class="toggle-topbar menu-icon"><a href="#"><span>Menu</span></a></li>
 			</ul>
@@ -47,7 +47,7 @@
 	<footer>
 		<div class="row">
 			<div class="large-12 columns text-center">
-				<p>
+				<p class="copyright">
 					Copyright &copy; Meridian Consult Inc.
 					<br>
 					All Rights Reserved.

@@ -1,24 +1,47 @@
 /* general styles */
 
 body {
-  vertical-align: middle;
+  	vertical-align: middle;
+  	overflow-y: scroll;
 }
 
 header {
-
+	-webkit-box-shadow: 0 0 5px 0 rgba(0,0,0,0.4);
+	box-shadow: 0 0 5px 0 rgba(0,0,0,0.5);
 }
 
 main {
-  padding-bottom: 10px;
+  	padding-bottom: 10px;
 }
 
 footer {
-  background-color: beige;
-  padding: 20px 0 5px 0;
+  	background-color: darkslateblue;
+  	padding: 20px 0 0 0;
+  	border-top: 3px solid cornflowerblue;
 }
 
 /* css classes */
 
 .fullspan {
-  min-width: 100%;
+  	min-width: 100%;
+}
+
+/* more specific styles */
+
+footer p, footer h6 {
+	font-size: 0.75rem;
+	color: #FFF;
+	font-family: 'Droid Sans', serif;
+}
+footer ul.footer-links li {
+	font-size: 0.73em;
+	font-family: 'Droid Sans', serif;
+	list-style: none;
+}
+footer ul.footer-links li a {
+	color: #ef4523;
+	transition: all 0.5s linear;
+}
+footer ul.footer-links li a:hover {
+	color: #aaaaaa;
 }
