@@ -44,7 +44,6 @@ class CategoriesController extends BackroomController {
 
 		$category->name = $request->get('name');
 		$category->description = $request->get('description');
-		$category->approved = 1; // is approved by default for admins
 
 		$category->save();
 	}
@@ -57,6 +56,8 @@ class CategoriesController extends BackroomController {
 	 */
 	public function show($id)
 	{
+		// call Api\CategoriesController->show($id)
+		
 		return view('backroom.categories.show');
 	}
 

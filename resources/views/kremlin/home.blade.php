@@ -18,7 +18,9 @@
 				<article>
 					<h5>What resources are available?</h5>
 
-					<p>System administrators are able to access any part of The Backroom, plus the pages shown below.</p>
+					<p>
+						System administrators are able to access any part of The Backroom, plus the resources shown below.
+					</p>
 
 					<dl>
 						<dt><a href="{{ url('backroom/modules') }}">Modules</a></dt>
