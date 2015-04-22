@@ -16,7 +16,11 @@ class CategoriesController extends BackroomController {
 	 */
 	public function index()
 	{
-		return view('backroom.categories.index', array( 'categories' => Category::all() ));
+		$categories = Category::all();
+
+		$data = array( 'categories' => $categories );
+
+		return view('backroom.categories.index', $data);
 	}
 
 	/**
@@ -32,7 +36,7 @@ class CategoriesController extends BackroomController {
 	/**
 	 * Store a newly created resource in storage.
 	 *
-	 * @return Response
+	 * @return View
 	 */
 	public function store(Request $request)
 	{
@@ -49,7 +53,7 @@ class CategoriesController extends BackroomController {
 	 * Display the specified resource.
 	 *
 	 * @param  int  $id
-	 * @return Response
+	 * @return View
 	 */
 	public function show($id)
 	{
@@ -91,16 +95,6 @@ class CategoriesController extends BackroomController {
 	public function destroy($id)
 	{
 		// call Api\CategoriesController->destroy($id)
-	}
-
-	/**
-	 * Suggest a new category.
-	 *
-	 * @return mixed
-	 */
-	public function suggest()
-	{
-		return view('backroom.categories.suggest');
 	}
 
 }

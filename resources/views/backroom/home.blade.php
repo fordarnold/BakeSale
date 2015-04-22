@@ -4,7 +4,7 @@
 <div class="row">
 	<div class="large-12 columns">
 		
-		<section class="dashboard">
+		<section class="backroom home">
 
 			<hgroup>
 				<h2>Welcome to The Backroom</h2>
