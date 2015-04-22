@@ -43,6 +43,7 @@ footer p, footer h6 {
 	color: #FFF;
 	font-family: 'Droid Sans', serif;
 }
+
 footer ul.inline {
 
 }
@@ -54,5 +55,5 @@ footer ul.inline li a {
 	transition: all 0.5s linear;
 }
 footer ul.inline li a:hover {
-	color: #aaaaaa;
+	color: cornflowerblue;
 }
