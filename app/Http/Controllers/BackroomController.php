@@ -1,6 +1,6 @@
 <?php namespace Bakesale\Http\Controllers;
 
-use Illuminate\Http\Request;
+use Carbon\Carbon;
 
 class BackroomController extends Controller {
 
@@ -26,13 +26,13 @@ class BackroomController extends Controller {
 	}
 
 	/**
-	 * Example function
+	 * Test function
 	 * 
-	 * @return Request Get the incoming HTTP request
+	 * @return DateTime
 	 */
-	public function request(Request $request)
+	public function date()
 	{
-		return $request;
+		return Carbon::now();
 	}
 
 }

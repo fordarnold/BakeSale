@@ -16,8 +16,7 @@ class CategoriesController extends BackroomController {
 	 */
 	public function index()
 	{
-		return $this->request()->method();
-		// return view('backroom.categories.index', array( 'categories' => Category::all() ));
+		return view('backroom.categories.index', array( 'categories' => Category::all() ));
 	}
 
 	/**
@@ -80,7 +79,7 @@ class CategoriesController extends BackroomController {
 	 */
 	public function update($id)
 	{
-		return 'Hello';
+		// call Api\CategoriesController->update($id)
 	}
 
 	/**
@@ -91,7 +90,7 @@ class CategoriesController extends BackroomController {
 	 */
 	public function destroy($id)
 	{
-		//
+		// call Api\CategoriesController->destroy($id)
 	}
 
 	/**
