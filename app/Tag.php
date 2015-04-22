@@ -23,13 +23,13 @@ class Tag extends Model {
 	 * Support functions
 	 */
 	
-	public static function isApproved($id = 0)
-	{
-		return $this->where('id', $id)->get(['approved']);
-	}
+	// public static function isApproved($id = 0)
+	// {
+	// 	return $this->where('id', $id)->get(['approved']);
+	// }
 
-	public static function isApproved($tag_name = '')
-	{
-		return $this->where('name', $tag_name)->get(['approved']);
-	}
+	// public static function isApproved($tag_name = '')
+	// {
+	// 	return $this->where('name', $tag_name)->get(['approved']);
+	// }
 }

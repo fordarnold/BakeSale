@@ -15,7 +15,6 @@ class CreateProductsTable extends Migration {
 		Schema::create('products', function(Blueprint $table) 
 		{
 			$table->increments('id');
-
 			$table->integer('category_id');
 			$table->string('name');
 			$table->string('vendor')->nullable();
@@ -25,7 +24,6 @@ class CreateProductsTable extends Migration {
 			$table->float('unit_price');
 			$table->integer('currency_id')->default(1);
 			$table->integer('min_stock')->default(5);
-
 			$table->timestamps();
 		});
 	}

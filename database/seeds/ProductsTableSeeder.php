@@ -2,6 +2,8 @@
 
 use Illuminate\Database\Seeder;
 
+use Bakesale\Product;
+
 class ProductsTableSeeder extends Seeder {
 
     public function run()
@@ -14,7 +16,7 @@ class ProductsTableSeeder extends Seeder {
         	'photo' => 'http://placephant.com/200',
         	'unit_price' => 500.0,
         	'currency_id' => 1,
-        	'min_stock' => 10,
+        	'min_stock' => 10
 		]);
 
 		Product::create([
@@ -22,7 +24,7 @@ class ProductsTableSeeder extends Seeder {
         	'name' 	=> 'Salami Sandwich',
         	'photo' => 'http://placephant.com/300',
         	'unit_price' => 800.0,
-        	'currency_id' => 1,
+        	'currency_id' => 1
 		]);
 
 		Product::create([
@@ -31,7 +33,7 @@ class ProductsTableSeeder extends Seeder {
         	'description' => 'Strong coffee',
         	'photo' => 'http://placephant.com/200',
         	'unit_price' => 500.0,
-        	'currency_id' => 1,
+        	'currency_id' => 1
 		]);
     }
 
