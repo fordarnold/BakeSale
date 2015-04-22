@@ -28,20 +28,31 @@ footer {
 
 /* more specific styles */
 
+ul.inline {
+	list-style: none;
+	margin-left: 0;
+	margin-bottom: 5px;
+}
+ul.inline li {
+	display: inline-block;
+	padding: 3px;
+}
+
 footer p, footer h6 {
 	font-size: 0.75rem;
 	color: #FFF;
 	font-family: 'Droid Sans', serif;
 }
-footer ul.footer-links li {
-	font-size: 0.73em;
-	font-family: 'Droid Sans', serif;
-	list-style: none;
+footer ul.inline {
+
 }
-footer ul.footer-links li a {
-	color: #ef4523;
+footer ul.inline li {
+	font-size: 0.9em;
+}
+footer ul.inline li a {
+	color: #fff;
 	transition: all 0.5s linear;
 }
-footer ul.footer-links li a:hover {
+footer ul.inline li a:hover {
 	color: #aaaaaa;
 }

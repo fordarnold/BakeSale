@@ -32,6 +32,7 @@
 			</ul>
 			<section class="top-bar-section">
 				<ul class="right">
+					<li><a href="{{ url('user/settings') }}">Settings</a></li>
 					<li><a href="{{ url('auth/logout') }}">Logout</a></li>
 				</ul>
 			</section>
@@ -47,11 +48,18 @@
 	<footer>
 		<div class="row">
 			<div class="large-12 columns text-center">
+
+				<ul class="inline">
+					<li><a href="#">facebook</a></li>
+					<li><a href="#">twitter</a></li>
+				</ul>
+
 				<p class="copyright">
 					Copyright &copy; {{ date('Y') }}, Meridian Consult Inc. 
 					<br>
 					All Rights Reserved.
 				</p>
+
 			</div>
 		</div>
 	</footer>
