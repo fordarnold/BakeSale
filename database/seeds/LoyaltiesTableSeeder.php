@@ -2,14 +2,17 @@
 
 use Illuminate\Database\Seeder;
 
-// composer require laracasts/testdummy
-use Laracasts\TestDummy\Factory as TestDummy;
+use Bakesale\Loyalty;
 
 class LoyaltiesTableSeeder extends Seeder {
 
     public function run()
     {
-        // TestDummy::times(20)->create('App\Post');
+        Loyalty::create([
+			'uid' => 'AX2938SDE',
+			'points' => 'John',
+			'customer_id' => 1
+		]);
     }
 
 }

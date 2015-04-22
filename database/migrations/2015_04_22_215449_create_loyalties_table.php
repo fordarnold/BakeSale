@@ -15,6 +15,10 @@ class CreateLoyaltiesTable extends Migration {
 		Schema::create('loyalties', function(Blueprint $table)
 		{
 			$table->increments('id');
+			$table->string('uid')->unique(); // unique code for loyalty card
+			$table->integer('points')->default(0); // who doesnt love loyalty points
+			$table->string('category')->nullable(); // dont know how to deal with these yet
+			$table->integer('customer_id')->unique(); // must belong to customer
 			$table->timestamps();
 		});
 	}
