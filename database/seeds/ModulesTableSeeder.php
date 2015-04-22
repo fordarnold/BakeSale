@@ -63,10 +63,10 @@ class ModulesTableSeeder extends Seeder {
 	        	'name' => 'loyalty program',
 	        	'description' => 'where do your customers loyalties lie?',
 	        	'enabled' => false
-    		],
+    		]
     	);
 
-        Module::forceCreate($array);
+        DB::table('modules')->insert($array); // i'm guessing this is how 'mass assignment' works
     }
 
 }
