@@ -1,16 +1,16 @@
 <?php namespace Bakesale\Http\Controllers;
 
-class WebstoreController extends Controller {
+class KremlinController extends Controller {
 
 	/*
 	|--------------------------------------------------------------------------
-	| The Webstore Controller
+	| The Kremlin Controller
 	|--------------------------------------------------------------------------
 	| 
-	| The 'Webstore' is the frontend user interface.
+	| The 'Kremlin' is the backend user interface for system administrators.
 	|
-	| This controller checks to see if requests are coming from an authorized
-	| user, plus so much more.
+	| This controller primarily checks to see if requests are coming from
+	| a sysadmin user, and so much more.
 	|
 	*/
 
@@ -21,7 +21,7 @@ class WebstoreController extends Controller {
 	 */
 	public function __construct()
 	{
-		$this->middleware('auth');
+		// $this->middleware('auth.sysadmin');
 	}
 
 }

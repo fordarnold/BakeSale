@@ -30,6 +30,15 @@ Route::get('test', function ()
 	return Bakesale\Services\TableService::isEnabled();
 });
 
+# system admin back-end
+Route::group(['prefix' => 'kremlin'], function ()
+{
+	Route::get('/', 'Kremlin\WelcomeController@index');
+	
+	Route::resource('systems', 'Kremlin\SystemsController');
+	Route::resource('modules', 'Kremlin\ModulesController');
+});
+
 # admin back-end
 Route::group(['prefix' => 'backroom'], function ()
 {

@@ -10,32 +10,27 @@ class CategoriesTableSeeder extends Seeder {
     {
         Category::create([
 			'name' 	=> 'Pastries',
-			'description' => 'Cakes, cookies, items baked with dough',
-			'approved' => 1
+			'description' => 'Cakes, cookies, et al.'
 		]);
 
 		Category::create([
 			'name' 	=> 'Confectionaries',
-			'description' => 'Sandwiches et al.',
-			'approved' => 1
+			'description' => 'Sandwiches, et al.'
 		]);
 
 		Category::create([
 			'name' 	=> 'Candy',
-			'description' => 'Indulge your sweet tooth',
-			'approved' => 1
+			'description' => 'Indulge your sweet tooth'
 		]);
 
 		Category::create([
 			'name' 	=> 'Beverages',
-			'description' => 'Coffee, tea and other drinks',
-			'approved' => 1
+			'description' => 'Coffee, tea, et al.'
 		]);
 
 		Category::create([
 			'name' 	=> 'Shakes',
-			'description' => 'Milkshakes, fruit shakes, et al.',
-			'approved' => 1
+			'description' => 'Milkshakes, fruit shakes, et al.'
 		]);
     }
 

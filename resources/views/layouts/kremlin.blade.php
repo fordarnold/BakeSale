@@ -4,7 +4,7 @@
 	<meta charset="utf-8" />
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-	<title>The Backroom @ Bakesale</title>
+	<title>The Kremlin @ Bakesale</title>
 
 	<!-- normalize css -->
 	<link href="{{ asset('/vendor/foundation-5.5.0/css/normalize.css') }}" rel="stylesheet">
@@ -15,7 +15,7 @@
 	<!-- application css -->
 	<link href="{{ asset('/css/app.css') }}" rel="stylesheet">
 	<link href="{{ asset('/css/backend.css') }}" rel="stylesheet">
-	<link href="{{ asset('/css/backroom.css') }}" rel="stylesheet">
+	<link href="{{ asset('/css/kremlin.css') }}" rel="stylesheet">
 
 	<!-- modernizr -->
 	<script src="{{ asset('/vendor/foundation-5.5.0/js/vendor/modernizr.js') }}"></script>
@@ -27,7 +27,7 @@
 		<nav class="top-bar" data-topbar role="navigation">
 			<ul class="title-area">
 				<li class="name">
-					<h1><a href="{{ url('backroom') }}" title="The Backroom">Bakesale \ The Backroom</a></h1>
+					<h1><a href="{{ url('kremlin') }}" title="The Backroom">Bakesale \ The Kremlin</a></h1>
 				</li>
 				<li class="toggle-topbar menu-icon"><a href="#"><span>Menu</span></a></li>
 			</ul>

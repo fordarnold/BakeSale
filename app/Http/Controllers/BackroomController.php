@@ -9,7 +9,8 @@ class BackroomController extends Controller {
 	| The Backroom Controller
 	|--------------------------------------------------------------------------
 	| 
-	| The 'Backroom' is the backend administrator user interface.
+	| The 'Backroom' is the backend user interface for administrators.
+	|
 	| This controller checks to see if requests are coming from an admin user,
 	| and so much more.
 	|
