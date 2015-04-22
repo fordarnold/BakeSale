@@ -8,6 +8,7 @@ class WebstoreController extends Controller {
 	|--------------------------------------------------------------------------
 	| 
 	| The 'Webstore' is the frontend user interface.
+	|
 	| This controller checks to see if requests are coming from an authorized
 	| user, plus so much more.
 	|
