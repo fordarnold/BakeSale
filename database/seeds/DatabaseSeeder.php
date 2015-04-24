@@ -14,14 +14,14 @@ class DatabaseSeeder extends Seeder {
 	{
 		Model::unguard();
 
-		// $this->call('SystemsTableSeeder');
+		// $this->call('SystemsTableSeeder'); // many 2 many relationship with Modules
 		$this->call('ModulesTableSeeder');
 
 		$this->call('UsersTableSeeder');
 		
 		$this->call('CategoriesTableSeeder');
 		$this->call('ProductsTableSeeder');
-		$this->call('TagsTableSeeder');
+		// $this->call('TagsTableSeeder');
 		// $this->call('MenusTableSeeder');
 
 		$this->call('CustomersTableSeeder');

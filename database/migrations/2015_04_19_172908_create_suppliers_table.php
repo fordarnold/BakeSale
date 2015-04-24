@@ -20,6 +20,7 @@ class CreateSuppliersTable extends Migration {
 			$table->string('last_name');
 			$table->string('company')->nullable();
 			$table->text('bio')->nullable();
+			$table->string('photo')->nullable();
 			$table->timestamps();
 		});
 	}

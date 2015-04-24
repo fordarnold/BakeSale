@@ -51,7 +51,7 @@ class ModulesTableSeeder extends Seeder {
     		],
     		[
 	        	'name' => 'the exit experience',
-	        	'description' => '',
+	        	'description' => 'how do cutomers feel about the app experience after theyve left',
 	        	'enabled' => true
     		],
     		[
@@ -61,7 +61,7 @@ class ModulesTableSeeder extends Seeder {
     		],
     		[
 	        	'name' => 'loyalty program',
-	        	'description' => 'where do your customers loyalties lie?',
+	        	'description' => 'premium service for loyal customers',
 	        	'enabled' => false
     		]
     	);

@@ -20,10 +20,10 @@ class CreateProductsTable extends Migration {
 			$table->string('vendor')->nullable();
 			$table->text('description')->nullable();
 			$table->string('photo')->nullable();
-			$table->float('unit_cost')->nullable(); // if product can be purchased from supplier
+			$table->float('unit_cost')->nullable(); // if product can be purchased from a supplier
 			$table->float('unit_price');
 			$table->integer('currency_id')->default(1);
-			$table->integer('min_stock')->default(5);
+			$table->integer('min_stock')->default(0);
 			$table->timestamps();
 		});
 	}

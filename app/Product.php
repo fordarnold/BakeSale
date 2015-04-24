@@ -14,7 +14,7 @@ class Product extends Model {
 	);
 
 	/**
-	 * Relationships
+	 * Relationships with other models
 	 */
 	
 	public function category()

@@ -35,12 +35,12 @@ class TagsTableSeeder extends Seeder {
         ]);
 
         // attach tags to some products
-        // Product::find(1)->tags()->attach(1);
-        // Product::find(2)->tags()->attach(2);
-        // Product::find(2)->tags()->attach(3);
-        // Product::find(3)->tags()->attach(4);
-        // Product::find(3)->tags()->attach(5);
-        // Product::find(3)->tags()->attach(6);
+        Product::find(1)->tags()->attach(1);
+        Product::find(2)->tags()->attach(2);
+        Product::find(2)->tags()->attach(3);
+        Product::find(3)->tags()->attach(4);
+        Product::find(3)->tags()->attach(5);
+        Product::find(3)->tags()->attach(6);
     }
 
 }
