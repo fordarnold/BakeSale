@@ -9,7 +9,7 @@ class CustomersTableSeeder extends Seeder {
     public function run()
     {
         Customer::create([
-			'user_id' => 2,
+			'user_id' => 4,
 			'first_name' => 'John',
 			'last_name' => 'Cena',
 			'company' => 'Random Company Ltd',
@@ -17,7 +17,6 @@ class CustomersTableSeeder extends Seeder {
 		]);
 
 		Customer::create([
-			'user_id' => 3,
 			'first_name' => 'Jack',
 			'last_name' => 'Doe',
 			'company' => 'Random Inc',

@@ -15,7 +15,7 @@ class CreateCustomersTable extends Migration {
 		Schema::create('customers', function(Blueprint $table)
 		{
 			$table->increments('id');
-			$table->integer('user_id')->unique(); // must be an authorized user
+			$table->integer('user_id')->nullable(); // can be an authorized user
 			$table->string('first_name');
 			$table->string('last_name');
 			$table->string('company')->nullable();

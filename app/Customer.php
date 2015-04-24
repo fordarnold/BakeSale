@@ -21,7 +21,7 @@ class Customer extends Model {
 
 	public function loyalty()
 	{
-		$this->hasOne('Loyalty');
+		$this->hasMany('Loyalty');
 	}
 
 }
