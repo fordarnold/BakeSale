@@ -16,9 +16,9 @@ class CreateLoyaltiesTable extends Migration {
 		{
 			$table->increments('id');
 			$table->string('uid')->unique(); // unique code for loyalty card
-			$table->integer('points')->default(0); // who doesnt love loyalty points
-			$table->string('category')->nullable(); // dont know how to deal with these yet
-			$table->integer('customer_id')->unique(); // must belong to customer
+			$table->bigInteger('points')->default(0); // who doesnt love loyalty points :)
+			$table->string('category')->default('bronze'); // now I know :)
+			$table->integer('customer_id'); // must belong to customer
 			$table->timestamps();
 		});
 	}

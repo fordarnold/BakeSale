@@ -14,12 +14,12 @@ class Product extends Model {
 	);
 
 	/**
-	 * Relationships
+	 * Relationships with other models
 	 */
 	
 	public function category()
 	{
-		$this->belongsTo('Category');
+		$this->belongsTo('Bakesale\Category');
 	}
 
 	// public function currency()
@@ -29,12 +29,12 @@ class Product extends Model {
 
 	public function tags()
 	{
-		$this->belongsToMany('Tag');
+		$this->belongsToMany('Bakesale\Tag');
 	}
 
 	public function menus()
 	{
-		$this->belongsToMany('Menu');
+		$this->belongsToMany('Bakesale\Menu');
 	}
 
 }

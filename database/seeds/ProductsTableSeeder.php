@@ -35,6 +35,16 @@ class ProductsTableSeeder extends Seeder {
         	'unit_price' => 500.0,
         	'currency_id' => 1
 		]);
+
+        Product::create([
+            'category_id' => 6,
+            'name'  => 'Sweet and sour pork',
+            'vendor'  => 'The Culinary Suite',
+            'description' => 'Experience the amazing taste of one of Asias most popular dishes',
+            'photo' => 'http://lorempixel.com/200/400',
+            'unit_price' => 500.0,
+            'currency_id' => 1
+        ]);
     }
 
 }

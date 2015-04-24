@@ -8,6 +8,6 @@ class Supplier extends Model {
 
 	protected $perPage = 20;
 
-	protected $fillable = array('first_name', 'last_name', 'company', 'bio');
+	protected $fillable = array('user_id', 'first_name', 'last_name', 'company', 'bio', 'photo');
 
 }

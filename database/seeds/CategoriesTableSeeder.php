@@ -32,6 +32,11 @@ class CategoriesTableSeeder extends Seeder {
 			'name' 	=> 'Shakes',
 			'description' => 'Milkshakes, fruit shakes, et al.'
 		]);
+
+		Category::create([
+			'name' 	=> 'Chinese cuisine',
+			'description' => 'Feel the taste of the Far East'
+		]);
     }
 
 }
