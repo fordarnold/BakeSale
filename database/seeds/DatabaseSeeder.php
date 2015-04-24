@@ -17,7 +17,7 @@ class DatabaseSeeder extends Seeder {
 		// $this->call('SystemsTableSeeder');
 		$this->call('ModulesTableSeeder');
 
-		// $this->call('UsersTableSeeder');
+		$this->call('UsersTableSeeder');
 		
 		$this->call('CategoriesTableSeeder');
 		$this->call('ProductsTableSeeder');
@@ -36,7 +36,7 @@ class DatabaseSeeder extends Seeder {
 		// $this->call('StocksTableSeeder');
 		
 		// success message
-		$this->command->comment('>>> Seeding Completed Successfully :) <<<');
+		$this->command->comment('>>> Seeding Completed Successfully <<<');
 	}
 
 }
