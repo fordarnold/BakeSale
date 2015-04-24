@@ -2,6 +2,9 @@
 
 use Illuminate\Database\Eloquent\Model;
 
+/**
+ * A group of similar products is a category
+ */
 class Category extends Model {
 
 	protected $table = "categories";
