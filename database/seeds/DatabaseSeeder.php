@@ -14,7 +14,7 @@ class DatabaseSeeder extends Seeder {
 	{
 		Model::unguard();
 
-		// $this->call('SystemsTableSeeder'); // many 2 many relationship with Modules
+		// $this->call('TiersTableSeeder'); // many 2 many relationship with Modules
 		$this->call('ModulesTableSeeder');
 
 		$this->call('UsersTableSeeder');
