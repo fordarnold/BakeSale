@@ -20,11 +20,6 @@ class MenusTableSeeder extends Seeder {
             'description' => 'Enjoy the happy hour menu every friday at 8pm-10pm',
             'photo' => 'http://lorempixel.com/200/300'
         ]);
-
-        // attach menus to some products
-        Product::find(1)->menus()->attach(1);
-        Product::find(1)->menus()->attach(2);
-        Product::find(2)->menus()->attach(2);
     }
 
 }
