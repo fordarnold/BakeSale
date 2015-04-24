@@ -3,7 +3,6 @@
 use Illuminate\Database\Seeder;
 
 use Bakesale\Menu;
-use Bakesale\Product;
 
 class MenusTableSeeder extends Seeder {
 
