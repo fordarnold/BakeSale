@@ -35,7 +35,7 @@ class DatabaseSeeder extends Seeder {
 
 		// $this->call('StocksTableSeeder');
 		
-		// $this->call('ProductTagTableSeeder');
+		$this->call('ProductTagTableSeeder');
 		// $this->call('MenuProductTableSeeder');
 		
 		// success message

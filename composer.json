@@ -12,7 +12,7 @@
 		"phpunit/phpunit": "~4.0",
 		"phpspec/phpspec": "~2.1",
 		"laracasts/generators": "~1.1",
-		"laracasts/testdummy": "stable",
+		"laracasts/testdummy": "2.*"
 	},
 	"autoload": {
 		"classmap": [
