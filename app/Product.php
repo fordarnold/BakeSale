@@ -19,7 +19,7 @@ class Product extends Model {
 	
 	public function category()
 	{
-		$this->belongsTo('Bakesale\Category');
+		return $this->belongsTo('Bakesale\Category');
 	}
 
 	// public function currency()
@@ -29,12 +29,12 @@ class Product extends Model {
 
 	public function tags()
 	{
-		$this->belongsToMany('Bakesale\Tag');
+		return $this->belongsToMany('Bakesale\Tag');
 	}
 
 	public function menus()
 	{
-		$this->belongsToMany('Bakesale\Menu');
+		return $this->belongsToMany('Bakesale\Menu');
 	}
 
 }

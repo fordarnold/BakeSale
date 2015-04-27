@@ -23,7 +23,7 @@ class Menu extends Model {
 
 	public function products()
 	{
-		$this->belongsToMany('Product');
+		return $this->belongsToMany('Product');
 	}
 
 	/**

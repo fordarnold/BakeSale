@@ -16,7 +16,7 @@ class Loyalty extends Model {
 	
 	public function customer()
 	{
-		$this->belongsTo('Customer');
+		return $this->belongsTo('Customer');
 	}
 
 }

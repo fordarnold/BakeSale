@@ -16,12 +16,12 @@ class Customer extends Model {
 	
 	public function user()
 	{
-		$this->belongsTo('User');
+		return $this->belongsTo('User');
 	}
 
 	public function loyalty()
 	{
-		$this->hasMany('Loyalty');
+		return $this->hasMany('Loyalty');
 	}
 
 }
