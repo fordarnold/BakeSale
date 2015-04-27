@@ -16,7 +16,7 @@ class Tag extends Model {
 	
 	public function products()
 	{
-		$this->belongsToMany('Product');
+		$this->belongsToMany('Bakesale\Product');
 	}
 
 	/**
